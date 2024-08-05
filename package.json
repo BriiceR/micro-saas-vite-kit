@@ -1,6 +1,6 @@
 {
   "name": "starter-vite-kit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "description": "Un starter kit pour les projets modernes avec Vite, React, TypeScript, Tailwind CSS et Firebase.",
   "main": "index.js",
