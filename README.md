@@ -27,7 +27,7 @@ Ce starter kit est un modèle prêt à l'emploi pour créer des applications Saa
 Pour créer un nouveau projet basé sur ce starter kit, utilisez la commande suivante :
 
 ```bash
-npx create-starter-kit my-app
+npx
 cd my-app
 npm install
 ```
