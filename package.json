@@ -41,7 +41,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BriiceR/Starter-saas-kit.git"
+    "url": "git+https://github.com/BriiceR/Starter-saas-kit.git"
   },
   "keywords": [
     "vite",
