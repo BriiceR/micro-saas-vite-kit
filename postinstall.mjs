@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const exec = promisify(execSync);
 
 async function cloneRepo() {
-  const repoUrl = 'https://github.com/ton-utilisateur/ton-depot.git';
+  const repoUrl = 'https://github.com/BriiceR/Starter-saas-kit.git';
   const tempDir = path.join(__dirname, 'temp-repo');
 
   try {
