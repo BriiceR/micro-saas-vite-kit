@@ -1,11 +1,13 @@
 # Starter Kit
 
-Un starter kit pour démarrer rapidement avec des applications SaaS modernes en utilisant React, Vite, TypeScript, TailwindCSS, Firebase, Zustand, et plus encore. Ce kit est conçu pour vous fournir une base solide et extensible pour vos projets.
+Un starter kit pour démarrer rapidement avec des applications SaaS modernes en utilisant React, Vite, TypeScript, TailwindCSS, Firebase, Zustand... Ce kit est conçu pour vous fournir une base solide et extensible pour vos projets.
+Ce kit fournit une base solide pour démarrer un projet avec les fonctionnalités essentielles d'authentification et une interface utilisateur prête à l'emploi.
 
 ## Table des matières
 
 - [Introduction](#introduction)
 - [Technologies Utilisées](#technologies-utilisées)
+- [Fonctionnalités](#fonctionnalités)
 - [Installation](#installation)
 
 ## Introduction
@@ -18,9 +20,15 @@ Ce starter kit est un modèle prêt à l'emploi pour créer des applications Saa
 - **[React](https://reactjs.org/)** : Bibliothèque pour construire l'interface utilisateur.
 - **[TypeScript](https://www.typescriptlang.org/)** : Superset de JavaScript avec typage statique.
 - **[TailwindCSS](https://tailwindcss.com/)** : Framework CSS utilitaire pour une conception rapide et flexible.
-- **[Firebase](https://firebase.google.com/)** : Services backend pour l'authentification, le stockage, et plus encore.
+- **[Firebase](https://firebase.google.com/)** : Services backend pour l'authentification, le stockage.
 - **[Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)** : Gestion d'état global simple et flexible.
 - **[ESLint](https://eslint.org/)** : Outil pour maintenir la qualité du code.
+
+## Fonctionnalités
+
+- **Inscription** : Les utilisateurs peuvent créer un compte avec une adresse e-mail et un mot de passe.
+- **Connexion** : Les utilisateurs peuvent se connecter avec leurs identifiants.
+- **Tableau de bord** : Une page protégée pour les utilisateurs connectés, accessible après l'authentification.
 
 ## Installation
 
