@@ -1,8 +1,13 @@
 #!/usr/bin/env node
 
 import { execSync } from 'child_process';
-import { existsSync, mkdirSync } from 'fs';
-import { resolve } from 'path';
+import fs from 'fs';
+import path from 'path';
+import url from 'url';
+
+// Obtenez le chemin du module
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const projectName = process.argv[2];
 
@@ -11,15 +16,15 @@ if (!projectName) {
   process.exit(1);
 }
 
-const templatePath = resolve(__dirname, '../template');
-const targetPath = resolve(process.cwd(), projectName);
+const templatePath = path.resolve(__dirname, '../template');
+const targetPath = path.resolve(process.cwd(), projectName);
 
-if (existsSync(targetPath)) {
+if (fs.existsSync(targetPath)) {
   console.error(`Folder ${projectName} already exists`);
   process.exit(1);
 }
 
-mkdirSync(targetPath);
+fs.mkdirSync(targetPath);
 execSync(`cp -r ${templatePath}/. ${targetPath}`);
 
 console.log(`Project ${projectName} created successfully.`);

@@ -1,6 +1,6 @@
 {
   "name": "starter-vite-kit-new",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Un template de projet pour Vite, React, TypeScript, Tailwind CSS et Firebase.",
   "main": "bin/starter-vite-kit.mjs",
   "bin": {
