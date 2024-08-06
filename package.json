@@ -1,7 +1,11 @@
 {
-  "name": "starter-vite-kit",
-  "version": "0.0.1",
+  "name": "starter-vite-kit-new",
+  "version": "0.0.5",
   "description": "Un template de projet pour Vite, React, TypeScript, Tailwind CSS et Firebase.",
+  "main": "bin/starter-vite-kit.mjs",
+  "bin": {
+    "starter-vite-kit": "./bin/starter-vite-kit.mjs"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --host",
@@ -37,5 +41,13 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BriiceR/Starter-saas-kit.git"
-  }
+  },
+  "keywords": [
+    "vite",
+    "react",
+    "typescript",
+    "tailwind",
+    "firebase",
+    "starter-kit"
+  ]
 }
