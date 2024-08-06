@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import { execSync } from 'child_process';
-import fs from 'fs';
+import fs from 'fs-extra'; // Utiliser fs-extra pour des opérations de fichier
 import path from 'path';
 import url from 'url';
+import { execSync } from 'child_process';
 
 // Obtenez le chemin du module
 const __filename = url.fileURLToPath(import.meta.url);
@@ -24,13 +24,23 @@ if (fs.existsSync(targetPath)) {
   process.exit(1);
 }
 
-fs.mkdirSync(targetPath);
-execSync(`cp -r ${templatePath}/. ${targetPath}`);
+try {
+  fs.mkdirSync(targetPath);
+  fs.copySync(templatePath, targetPath);
+  console.log(`Project ${projectName} created successfully.`);
+} catch (error) {
+  console.error(`Failed to copy template files: ${error.message}`);
+  process.exit(1);
+}
 
-console.log(`Project ${projectName} created successfully.`);
 console.log('Installing dependencies...');
 
-execSync(`cd ${projectName} && npm install`);
+try {
+  execSync(`cd ${targetPath} && npm install`, { stdio: 'inherit' });
+  console.log('Dependencies installed.');
+} catch (error) {
+  console.error(`Failed to install dependencies: ${error.message}`);
+  process.exit(1);
+}
 
-console.log('Dependencies installed.');
 console.log('Your project is ready!');
