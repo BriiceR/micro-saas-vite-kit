@@ -4,7 +4,7 @@
   "description": "Un template de projet pour Vite, React, TypeScript, Tailwind CSS et Firebase.",
   "main": "bin/create-starter-vite-kit.js",
   "bin": {
-    "create-starter-vite-kit": "./bin/create-starter-vite-kit.js"
+    "create-starter-vite-kit": "bin/create-starter-vite-kit.js"
   },
   "scripts": {
     "dev": "vite --host",
