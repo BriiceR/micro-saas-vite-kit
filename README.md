@@ -9,6 +9,9 @@ Ce kit fournit une base solide pour démarrer un projet avec les fonctionnalité
 - [Technologies Utilisées](#technologies-utilisées)
 - [Fonctionnalités](#fonctionnalités)
 - [Installation](#installation)
+- [Configuration Initiale](#configuration-initiale)
+- [Renommage du fichier .env.example](#renommage-du-fichier-envexample)
+- [Lancer le Projet](#lancer-le-projet)
 
 ## Introduction
 
@@ -29,13 +32,59 @@ Ce starter kit est un modèle prêt à l'emploi pour créer des applications Saa
 - **Inscription** : Les utilisateurs peuvent créer un compte avec une adresse e-mail et un mot de passe.
 - **Connexion** : Les utilisateurs peuvent se connecter avec leurs identifiants.
 - **Tableau de bord** : Une page protégée pour les utilisateurs connectés, accessible après l'authentification.
+- **Déconnexion** : Les utilisateurs peuvent se déconnecter de leur compte.
 
 ## Installation
 
 Pour créer un nouveau projet basé sur ce starter kit, utilisez la commande suivante :
 
 ```bash
-npx
+npx micro-saas-vite-kit my-app
 cd my-app
 npm install
 ```
+
+## Configuration initiale
+
+- **Ajout du fichier .gitignore**
+
+Pour éviter d’inclure des fichiers et des dossiers indésirables dans votre dépôt Git, vous devez ajouter un fichier .gitignore à la racine de votre projet. Voici un exemple de contenu pour le fichier .gitignore :
+
+```bash
+node_modules
+dist
+dist-ssr
+*.local
+.env
+```
+
+## Renommage du fichier .env.example
+
+Le fichier .env.example contient des variables d’environnement nécessaires à la configuration de votre application, notamment pour Firebase. Pour utiliser ces variables, vous devez renommer ce fichier en .env et remplir les valeurs appropriées:
+
+```bash
+VITE_REACT_APP_API_KEY=your_api_key
+VITE_REACT_APP_AUTH_DOMAIN=your_auth_domain
+VITE_REACT_APP_DATABASE_URL=your_database_url
+VITE_REACT_APP_PROJECT_ID=your_project_id
+VITE_REACT_APP_STORAGE_BUCKET=your_storage_bucket
+VITE_REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_REACT_APP_APP_ID=your_app_id
+VITE_REACT_APP_MEASUREMENT_ID=your_measurement_id
+```
+
+## Lancer le Projet
+
+Votre projet est maintenant prêt à être utilisé. Vous pouvez démarrer le serveur de développement avec la commande suivante :
+
+```bash
+npm run dev
+```
+
+## Auteur
+
+Ce projet est maintenu par **BriiceR**.
+
+## Dépôt Git
+
+Pour plus d'informations, consulter le dépôt GitHub du projet : [micro-saas-vite-kit](https://github.com/BriiceR/micro-saas-vite-kit)
