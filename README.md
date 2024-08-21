@@ -60,7 +60,7 @@ dist-ssr
 
 ## Renommage du fichier .env.exemple
 
-Le fichier .env.example contient des variables d’environnement nécessaires à la configuration de votre application, notamment pour Firebase. Pour utiliser ces variables, vous devez renommer ce fichier en .env et remplir les valeurs appropriées:
+Le fichier .env.exemple contient des variables d’environnement nécessaires à la configuration de votre application, notamment pour Firebase. Pour utiliser ces variables, vous devez renommer ce fichier en .env et remplir les valeurs appropriées:
 
 ```bash
 VITE_REACT_APP_API_KEY=your_api_key
