@@ -58,7 +58,7 @@ dist-ssr
 .env
 ```
 
-## Renommage du fichier .env.example
+## Renommage du fichier .env.exemple
 
 Le fichier .env.example contient des variables d’environnement nécessaires à la configuration de votre application, notamment pour Firebase. Pour utiliser ces variables, vous devez renommer ce fichier en .env et remplir les valeurs appropriées:
 

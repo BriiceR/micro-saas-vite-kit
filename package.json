@@ -1,6 +1,6 @@
 {
   "name": "micro-saas-vite-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Un template de projet pour Vite, React, TypeScript, Tailwind CSS et Firebase.",
   "main": "bin/starter-vite-kit.mjs",
   "bin": {
